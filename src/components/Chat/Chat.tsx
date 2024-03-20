@@ -13,7 +13,7 @@ export const Chat: FC = () => {
 	const navigate = useNavigate();
 	const { search } = useLocation();
 	const [state, setState] = useState<ChatMessage[]>([]);
-	const socket: Socket = io('https://friendly-chat-server.vercel.app/');
+	const socket: Socket = io('http://localhost:5000');
 	const [params, setParams] = useState<SearchParams>({ room: '', user: '' });
 	const [message, setMessage] = useState<string>('');
 	const [isOpen, setIsOpen] = useState<boolean>(false);
