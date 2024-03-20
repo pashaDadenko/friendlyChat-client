@@ -1,0 +1,51 @@
+.wrapper {
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: #0000002f;
+	border-radius: 15px;
+	padding: 70px;
+	box-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80, 0 0 15px #ffffff80, 0 0 20px #ffffff80;
+	.title {
+		text-align: center;
+		color: #fff;
+		margin-bottom: 50px;
+		text-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80, 0 0 15px #ffffff80, 0 0 20px #ffffff80;
+		animation: glow 1.5s infinite alternate;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		.button {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			font-size: 35px;
+			cursor: pointer;
+			color: #fff;
+			text-shadow: 0 0 8px #ffffff80, 0 0 12px #ffffff80, 0 0 16px #ffffff80, 0 0 20px #ffffff80;
+			&:hover {
+				text-shadow: 0 0 8px #ffffff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #ffffff;
+			}
+		}
+		.input {
+			border-radius: 10px;
+			margin-bottom: 30px;
+			padding: 10px;
+			border: none;
+			outline: none;
+			text-indent: 10px;
+			box-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80, 0 0 15px #ffffff80, 0 0 20px #ffffff80;
+			animation: glow 1.5s infinite alternate;
+		}
+	}
+}
+@keyframes glow {
+	from {
+		text-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80, 0 0 15px #ffffff80, 0 0 20px #ffffff80;
+	}
+	to {
+		text-shadow: 0 0 8px #ffffffe6, 0 0 12px #ffffffe6, 0 0 16px #ffffffe6, 0 0 20px #ffffffe6;
+	}
+}

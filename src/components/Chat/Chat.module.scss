@@ -1,0 +1,85 @@
+.wrapper {
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background-color: #0000002f;
+	border-radius: 15px;
+	box-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80, 0 0 15px #ffffff80, 0 0 20px #ffffff80;
+
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 30px;
+		border-radius: 15px 15px 0 0;
+		background-color: #333333;
+		.title {
+			color: #fff;
+			font-size: 20px;
+			text-shadow: 0 0 8px #ffffff80, 0 0 12px #ffffff80, 0 0 16px #ffffff80, 0 0 20px #ffffff80;
+		}
+		.users {
+			color: #fff;
+		}
+		.button {
+			background-color: transparent;
+			border: none;
+			font-size: 20px;
+			outline: none;
+			cursor: pointer;
+			color: #fff;
+			text-shadow: 0 0 8px #ffffff80, 0 0 12px #ffffff80, 0 0 16px #ffffff80, 0 0 20px #ffffff80;
+			&:hover {
+				text-shadow: 0 0 8px #ffffff, 0 0 12px #ffffff, 0 0 16px #ffffff, 0 0 20px #ffffff;
+			}
+		}
+	}
+
+	.form {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #333333;
+		height: 80px;
+		padding: 0 30px;
+		border-radius: 0 0 15px 15px;
+		.input {
+			height: 80px;
+			width: 100%;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			color: #fff;
+			&::placeholder {
+				font-size: 20px;
+			}
+		}
+		.wrap {
+			display: flex;
+			gap: 30px;
+			color: #fff;
+			font-size: 30px;
+			position: relative;
+			.icon {
+				cursor: pointer;
+				&:hover {
+					color: #ffffff7c;
+				}
+			}
+			.emojies {
+				position: absolute;
+				bottom: -40px;
+				right: -30px;
+				width: 600px !important;
+				background-color: #333333;
+				border-radius: 0 0 15px 15px !important;
+				input {
+					background-color: #333333;
+				}
+				h2 {
+					background-color: #333333;
+				}
+			}
+		}
+	}
+}
