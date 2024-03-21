@@ -13,7 +13,7 @@ export const Chat: FC = () => {
 	const navigate = useNavigate();
 	const { search } = useLocation();
 	const [state, setState] = useState<ChatMessage[]>([]);
-	const socket: Socket = io('https://railway.app/project/ee1fd0db-14bd-481a-814e-fa755279711e');
+	const socket: Socket = io('https://friendlychat-server.onrender.com');
 	const [params, setParams] = useState<SearchParams>({ room: '', user: '' });
 	const [message, setMessage] = useState<string>('');
 	const [isOpen, setIsOpen] = useState<boolean>(false);
