@@ -68,16 +68,19 @@
 			}
 			.emojies {
 				position: absolute;
-				bottom: -40px;
+				border-radius: 0;
+				border-left: none;
+				border-right: none;
+				bottom: 54px;
 				right: -30px;
 				width: 600px !important;
+				height: 400px !important;
 				background-color: #333333;
-				border-radius: 0 0 15px 15px !important;
 				input {
 					background-color: #333333;
 				}
 				h2 {
-					background-color: #333333;
+					display: none;
 				}
 			}
 		}

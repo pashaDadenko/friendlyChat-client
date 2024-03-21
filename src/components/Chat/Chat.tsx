@@ -62,7 +62,7 @@ export const Chat: FC = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
 				<div className={styles.title}>{params?.room}</div>
-				<div className={styles.users}>{users} человек в комнате</div>
+				<div className={styles.users}>{users} </div>
 				<button className={styles.button} onClick={outClick}>
 					выйти
 				</button>
@@ -74,9 +74,9 @@ export const Chat: FC = () => {
 				<input className={styles.input} type='text' name='message' placeholder='введите сообщение' value={message} autoComplete='off' required onChange={inputChange} />
 
 				<div className={styles.wrap}>
-					{!isOpen && <GiDiamondsSmile onClick={() => setIsOpen(!isOpen)} className={styles.icon} />}
+					<GiDiamondsSmile onClick={() => setIsOpen(!isOpen)} className={styles.icon} />
 					{isOpen && <EmojiPicker onEmojiClick={onEmojiClick} className={styles.emojies} />}
-					{!isOpen && <IoSend onClick={iconClick} className={styles.icon} />}
+					<IoSend onClick={iconClick} className={styles.icon} />
 				</div>
 			</form>
 		</div>
