@@ -62,7 +62,7 @@ export const Chat: FC = () => {
 		<div className={styles.wrapper}>
 			<div className={styles.header}>
 				<div className={styles.title}>{params?.room}</div>
-				<div className={styles.users}>{users} юзер(ов)</div>
+				<div className={styles.users}>{users} юзер ( ов )</div>
 				<button className={styles.button} onClick={outClick}>
 					выйти
 				</button>
